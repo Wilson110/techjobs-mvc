@@ -10,7 +10,9 @@
 
     <h1 th:text="${#strings.capitalizeWords(title)}"></h1>
 
-    <!-- TODO #3 - Use the same list display from search.html -->
+    <!-- TODO #3 - Use the same list display from search.html
+     See lines 31-38 in fragments.html template for code-->
+    <div th:replace="fragments :: job-listings"></div>
 
 </div>
 
