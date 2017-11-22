@@ -27,5 +27,15 @@
         </div>
     </div>
 
+    <!-- TODOs 2 and 3 fragment with job-listing class within a table -->
+    <div th:fragment="job-listings">
+        <table class="job-listing" th:each="job : ${jobs}">
+            <tr th:each="row : ${job}">
+                <td th:text="${row.key}"></td>
+                <td th:text="${row.value}"></td>
+            </tr>
+        </table>
+    </div>
+
 </body>
 </html>
